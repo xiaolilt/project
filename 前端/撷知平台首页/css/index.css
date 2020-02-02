@@ -1,0 +1,461 @@
+
+.main {
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+}
+/*banner*/
+.banner{
+    width: 100%;
+/*    height: 432px;*/
+    background: url(../img/index-bg02.png) no-repeat;
+}
+.banner-inner{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    z-index: 9;
+
+}
+.banner-img01{
+    margin-right: 90px;
+    position: absolute;
+    top: -18px;
+    right: 0;
+    animation: rubberBand 3s;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+.banner-img02{
+    position: absolute;
+    top: -18px;
+    right: 0;
+    animation: banner-img02 100s linear infinite;
+    
+}
+@keyframes banner-img02 {
+    0% {
+        transform: scale(1) translateX(0)
+    }
+    50% {
+        transform:scale(1) translateX(50%)
+    }
+    100% {
+        transform: scale(1) translateX(0)
+    }
+}
+.banner-img03{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    animation: bounceInRight 3s;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+.banner-img04{
+    position: absolute;
+    top: 230px;
+    right: 45px;
+    animation: bounceInRight 3s;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+.banner-title{
+    color: #fff;
+    margin-top: 95px;
+    animation: bounceInLeft 3s;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom
+}
+.banner-title>h3{
+    font-size: 48px;
+    margin-bottom: 24px;
+    
+}
+.banner-title>p{
+    font-size: 32px;
+    margin-bottom: 40px;
+    
+}
+.banner-line{
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform:  translateZ(0) scaleY(0.75)
+    }
+    100% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    position: absolute;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    z-index: -2;
+}
+.bgMiddle {
+    z-index: 10;
+}
+.waveBottom {
+    z-index: 10;
+    opacity: .5
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 1s;
+   -webkit-animation: move-wave 1s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 5s linear infinite;
+}
+/*主体*/
+.main-list{
+    padding: 0 0 40px 0;
+    overflow: hidden;
+}
+.main-list>li{
+    float: left;
+    width: 32%;
+    padding: 28px 38px;
+    margin: 10px 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -m-transition: all .3s;
+    transition: all .3s;
+}
+.main-list>li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main-list>li:hover{
+    border-radius: 6px;
+    box-shadow: 0 5px 20px rgba(23,81,71,.1);
+      animation: bounce 1s;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+.main-list>li h3{
+    font-size: 16px;
+    color: #333;
+    margin: 25px 0;
+}
+.main-list>li p{
+    font-size: 14px;
+    color: #666;
+}
+/*弹窗*/
+.wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+       
+}
+.wrap-inner{
+    width: 366px;
+    height: 436px;
+    background-color: #13c5a5;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -218px 0 0 -183px;
+}
+.index-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    
+}
+.index-close:hover{
+    animation: myrotate .5s;
+}
+@keyframes myrotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -m-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -m-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*微信登录*/
+.wrap-inner h3{
+    font-size: 22px;
+    color: #fff;
+    border-bottom: 1px solid #5cd7c1;
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 2px;
+}
+.wechat .wechat-code{
+    width: 182px;
+    height: 182px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 28px auto 16px auto;
+    overflow: hidden;
+}
+.wechat .wechat-code img{
+    width: 152px;
+    height: 152px;
+    margin: 15px;
+    
+}
+.wechat>p{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.tab-type{
+    margin-top: 24px;
+    position: relative;
+}
+.tab-type>div{
+    text-align: center;
+    color: #fff;
+    background-color: #13c5a5;
+    position: absolute;
+    top: 0;
+    left: 31.5%;
+    width: 37%;
+    z-index: 9;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0 16px;
+    
+}
+.tab-type img{
+    margin-right: 10px;
+}
+.tab-type hr{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 1px;
+    border: 0;
+    background-color: #5cd7c1;
+        
+}
+
+/*账号登录*/
+.login{
+    padding: 10px 0 0 0;
+}
+.login-input{
+    width: 313px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    padding-left: 20px;
+    border: 1px solid transparent;
+}
+.login-input.active{
+    border: 1px solid #f8a42a;
+}
+.login-input input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 16px;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #b1b1b1;
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #b1b1b1;
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #b1b1b1;
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #b1b1b1;
+} 
+.login-btn{
+    width: 313px;
+    height: 50px;
+    background-color: #f8a42a;
+    border-radius: 4px;
+    margin: 0 auto 0 auto;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    
+}
+.login-btn button{
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.login-word{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0 26.5px;
+    color: #fff;
+    margin: 20px 0 25px 0;
+}
+.login-word p,.login-word span{
+    cursor: pointer;
+}
+.login-word p img{
+    margin-right: 6px;
+}
+.login-input span{
+    cursor: pointer;
+}
+/*.忘记密码*/
+.login-yzm{
+    width: 313px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.login-yzm input{
+    width: 194px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    font-size: 16px;
+     margin-left: 0px;
+}
+.login-yzm>div{
+    width: 109px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: #f8a42a;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+    cursor: pointer;
+   
+}
+.forget .login-btn,.binding .login-btn,.set-forget .login-btn,.resrt-success .login-btn,.binding-tip .login-btn,.binding-success .login-btn{
+    margin-top: 50px;
+}
+/*微信绑定手机号*/
+.binding-img{
+    text-align: center;
+    color: #fff;
+    margin-top: 36px;
+    font-size: 20px;
+}
+.binding-img>div{
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -m-border-radius: 100%;
+    border-radius: 100%;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+}
+/*密码重置成功*/
+.resrt-success-img{
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    font-size: 18px;
+}
+.resrt-success-img>div{
+    width: 97px;
+    height: 97px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -m-border-radius: 100%;
+    border-radius: 100%;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+}
+/*.绑定提示*/
+.binding-tip .binding-img{
+    margin-top: 70px;
+}
+.binding-tip h4{
+    margin-top: 30px;
+}
+.wechat,.forget,.set-forget,.binding,.resrt-success,.resrt-success,.binding-tip,.binding-success{
+    display: none;
+}
+
+
+.toast{
+    width: 296px;
+    height: 53px;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 53px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -26.5px 0 0 -148px;
+    display: none;
+}

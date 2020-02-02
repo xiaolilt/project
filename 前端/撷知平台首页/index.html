@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="app">
+        <!--   头部-->
+        <div class="header">
+            <div class="heder-inner">
+                <a href="unit.html" class="logo">
+                    <img src="img/index-logo.png">
+                </a>
+
+                <div class="header-contact">
+                    <div class="header-contact-default"><img src="img/index-icon09.png" alt="">关注我们</div>
+                    <div class="header-contact-code">
+                        <div class="header-contact-icon"></div>
+                        <img src="img/index-code.png" alt="">
+                        <p>扫一扫关注公众号</p>
+                    </div>
+                </div>
+
+                <div class="drop-menu">
+                    <div class="drop-menu-default" >
+                        <div style="height: 30px;width: 30px;border-radius: 100%;overflow: hidden;margin-top: 26px;"><img src="img/index-icon07.png" alt="" style="width: 100%;height: 100%;display: block;"></div>
+                        <p @click="list_menu()">A.旁人</p>
+                        <span><img src="img/index-icon08.png" alt=""></span>
+                    </div>
+                    <div class="drop-menu-list">
+                        <ul class="drop-menu-ul">
+                            <li><a href="">我的教学</a></li>
+                            <li><a href="">我的学习</a></li>
+                            <li><a href="">我的资源</a></li>
+                        </ul>
+                        <ul class="drop-menu-ul">
+                            <li><a href="">我的消息</a></li>
+                            <li><a href="">我的设置</a></li>
+                        </ul>
+                        <ul class="drop-menu-ul">
+                            <li><a href="">退出</a></li>
+                            <li @click="login_index()"><a href="javascript:;">登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   头部-->
+
+        <!--banner-->
+        <div class="banner waveWrapper waveAnimation ">
+            <div class="banner-inner swiper-container">
+                <div class="banner-title">
+                    <h3>自适应教 • 学 • 研 • 评云平台</h3>
+                    <p>Self-adaption Teaching System</p>
+                    <div class="banner-line"></div>
+                </div>
+                <img src="img/index-img05.png" alt="" class="banner-img01">
+                <img src="img/index-img06.png" alt="" class="banner-img02">
+                <img src="img/index-img01.png" alt="" class="banner-img03">
+                <img src="img/index-img03.png" alt="" class="banner-img04">
+            </div>
+
+            <div class="waveWrapperInner waveMiddle">
+                <div class="wave waveMiddle"><img src="img/index-bg01.png" alt=""></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom"><img src="img/index-bg03.png" alt=""></div>
+            </div>
+        </div>
+        <!--banner-->
+
+        <div style="height:500px;"></div>
+
+        <!--   主体-->
+        <div class="main" style="margin-top:">
+            <ul class="main-list">
+                <li class="main-list-li">
+                    <a href="">
+                        <img src="img/index-icon01.png" alt="">
+                        <h3>组卷中心</h3>
+                        <p>试题精准，灵活组卷，即时反馈学业成果。</p>
+                    </a>
+                </li>
+                <li class="main-list-li">
+                    <a href="">
+                        <img src="img/index-icon02.png" alt="">
+                        <h3>备课中心</h3>
+                        <p>模板备课，同步课件，让备课有质又高效。</p>
+                    </a>
+                </li>
+                <li class="main-list-li">
+                    <a href="">
+                        <img src="img/index-icon03.png" alt="">
+                        <h3>在线学习</h3>
+                        <p>微课讲解，指导教学，促进教师专业发展。</p>
+                    </a>
+                </li>
+                <li class="main-list-li">
+                    <a href="">
+                        <img src="img/index-icon04.png" alt="">
+                        <h3>资源库</h3>
+                        <p>理论落地，素材荟萃，提升教师综合素养。</p>
+                    </a>
+                </li>
+
+                <li class="main-list-li">
+                    <img src="img/index-icon05.png" alt="">
+                    <h3>教学管理中心</h3>
+                    <p>应用管理，辅助教务，实时了解教学动态。</p>
+                </li>
+
+                <li class="main-list-li">
+                    <img src="img/index-icon06.png" alt="">
+                    <h3>敬请期待...</h3>
+                    <p>专家问答社区、数据分析平台</p>
+                </li>
+            </ul>
+
+        </div>
+        <!--   主体-->
+
+        <!--底部-->
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="main">
+                    <div class="footer-infomation">
+                        <div><img src="img/footer-logo.png" alt=""></div>
+                        <p>撷知教育云平台，专注K12各学科教育教学，拥有优质且权威的教育教学资源，致力于整合人工智能、大 数据、云计算技术自建CAC-KC评价指标体系，旨在打造一个自适应发展的教 ● 学 ● 研 ● 评生态圈，帮 助教师和学生轻松高效地实现个性化成长。
+                        </p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><b>●</b>上海撷知教育科技有限公司 </p>
+                        <ul>
+                            <li><img src="img/footer-icon01.png" alt="">support@shellskey.com</li>
+                            <li><img src="img/footer-icon02.png" alt="">021-60323228</li>
+                            <li><a href="">备课中心</a> | <a href="">组卷中心</a> | <a href="">在线学习</a> | <a href="">资源库</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-code">
+                        <p><b>●</b>微信公众号 </p>
+                        <div><img src="img/footer-code.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">沪ICP备18002358号 &nbsp;|&nbsp; Copyright © 2018 ShellsKey Education Inc. All Rights Reserved</div>
+        </div>
+        <!--底部-->
+
+        <!--弹窗-->
+        <div class="wrap">
+            <div class="wrap-inner">
+                <div class="index-close"><img src="img/index-close.png" alt=""></div>
+                <!-- 微信登录-->
+                <div class="wechat">
+                    <h3>微信登录</h3>
+                    <div class="wechat-code"><img src="img/index-code.png" alt=""></div>
+                    <p>请使用微信扫描二维码登录</p>
+                    <div class="tab-type">
+                        <div @click="user_login()"><img src="img/index-icon10.png" alt="">账号登录</div>
+                        <hr>
+                    </div>
+                </div>
+                <!-- 微信登录-->
+
+                <!-- 账号登录-->
+                <div class="login">
+                    <h3>账号登录</h3>
+                    <div class="login-input"><input type="text" placeholder="手机号" maxlength="11"></div>
+                    <div class="login-input"><input type="password" placeholder="密码" style="width: 88%"><img src="img/index-icon17.png" alt="" @click="password_safety()"></div>
+                    <div class="login-word">
+                        <p @click="auto_lgin()"><img src="img/index-icon13.png" alt=""><span>下次自动登录</span></p>
+                        <span @click="forget()">忘记密码？</span>
+                    </div>
+                    <div class="login-btn" @click="login()"><button>登录</button></div>
+                    <div class="tab-type">
+                        <div @click="wechat_login()"><img src="img/index-icon11.png" alt="">微信登录</div>
+                        <hr>
+                    </div>
+                </div>
+                <!-- 账号登录-->
+
+                <!-- 忘记密码-->
+                <div class="forget">
+                    <h3>忘记密码</h3>
+                    <div class="login-input"><input type="text" placeholder="手机号" maxlength="11"></div>
+                    <div class="login-yzm">
+                        <input type="password" placeholder="验证码">
+                        <div class="verification" @click="get_yzm()">{{countdown==0?'获取验证码':countdown+'秒'}}</div>
+                    </div>
+                    <div class="login-yzm">
+                        <input type="password" placeholder="请输入">
+                        <div style="background-color: #fff;border-radius: 1px solid #ddd"><img src="img/index-icon14.png" alt=""></div>
+                    </div>
+                    <div class="login-btn" @click="forget_next()"><button>下一步</button></div>
+                </div>
+                <!-- 忘记密码-->
+
+                <!-- 重置密码-->
+                <div class="set-forget">
+                    <h3>重置密码</h3>
+                    <div class="login-input"><input type="text" placeholder="手机号" maxlength="11"></div>
+                    <div class="login-input"><input type="password" placeholder="新密码"></div>
+                    <div class="login-input"><input type="password" placeholder="确认密码"></div>
+                    <div class="login-btn" @click="set_forget()"><button>确定</button></div>
+                </div>
+                <!-- 重置密码-->
+
+                <!-- 微信绑定手机号-->
+                <div class="binding">
+                    <div class="binding-img">
+                        <div><img src="img/u=229297863,3911490320&fm=11&gp=0.jpg" alt=""></div>
+                        <p>二凤</p>
+                    </div>
+                    <div class="login-input"><input type="text" placeholder="手机号" maxlength="11"></div>
+                    <div class="login-input"><input type="password" placeholder="密码"></div>
+                    <div class="login-btn" @click="binding_btn()"><button>下一步</button></div>
+                </div>
+                <!-- 微信绑定手机号-->
+
+                <!-- 密码重置成功-->
+                <div class="resrt-success">
+                    <div class="resrt-success-img">
+                        <div><img src="img/index-icon15.png" alt=""></div>
+                        <p>密码重置成功！</p>
+                    </div>
+                    <div class="login-btn"><button>正在登录...</button></div>
+                </div>
+                <!-- 密码重置成功-->
+
+                <!-- 绑定成功！-->
+                <div class="binding-success">
+                    <div class="resrt-success-img">
+                        <div><img src="img/index-icon15.png" alt=""></div>
+                        <p>绑定成功！</p>
+                    </div>
+                    <div class="login-btn"><button>正在登录...</button></div>
+                </div>
+                <!-- 绑定成功！-->
+
+                <!-- 绑定提示！-->
+                <div class="binding-tip">
+                    <div class="binding-img">
+                        <div><img src="img/u=229297863,3911490320&fm=11&gp=0.jpg" alt=""></div>
+                        <p>二凤</p>
+                        <h4>首次微信登录需绑定账号！</h4>
+                    </div>
+                    <div class="login-btn" @click="go_binding()"><button>去绑定</button></div>
+                </div>
+                <!-- 绑定提示！-->
+
+               <div class="toast">手机号不能为空</div>
+            </div>
+        </div>
+        <!--弹窗-->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
